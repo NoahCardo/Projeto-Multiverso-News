@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #333;
+}
+
+ul {
+    align-content: center;
+    margin: 1em;
+}
+
+li {
+    margin: 0.5em;
+}
+
+nav a {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+}
+
+
+/* Adição por Sugestão do Bing! Animação Carrosel Para as 3 Principais Notícias */
+
+/* Deixar para Depois Sjhcx... :´) Envolve Programação. */
+
+/* Termina Aqui! */
+
+article {
+    background: #333;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 20px;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+    transition: all .6s;
+    /* Animação de 0.6 segundos */
+}
+
+article:hover {
+    background: #333;
+    transform: scale(1.05);
+    /* */
+}
+
+footer {
+    background: #333;
+    text-align: center;
+    padding: 1em;
+}
