@@ -1,39 +1,39 @@
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ↑ Ajusta As Medidas de Nossa(s) Página(s) Para as Exigências de Diferentes Navegadores! ↑ */
+
 header {
-    background: #333;
+    background: #0F1836;
+    padding: 1.5em;
+    font-size: large;
 }
 
-ul {
-    align-content: center;
-    margin: 1em;
+.menu_bottom_categorias {
+    display: inline-block;
+    align-items: center;
+    text-align: center;
 }
 
-li {
-    margin: 0.5em;
-}
-
-nav a {
+ul li nav a .menu_bottom_categorias {
+    display: inline-block;
+    text-align: center;
     text-decoration: underline;
 }
 
 main {
-    display: flex;
+    display: inline-flex;
+    width: 30vw;
+    height: 30vh;
 }
 
-
-/* Adição por Sugestão do Bing! Animação Carrosel Para as 3 Principais Notícias */
-
-/* Deixar para Depois Sjhcx... :´) Envolve Programação. */
-
-/* Termina Aqui! */
-
 article {
-    background: #333;
+    background: #405AB0;
     margin: 1em;
     padding: 1em;
     border-radius: 20px;
@@ -43,13 +43,28 @@ article {
 }
 
 article:hover {
-    background: #333;
+    background: #405AB0;
     transform: scale(1.05);
     /* */
 }
 
+/* body {
+    background-image: url(https://images.pexels.com/photos/3934512/pexels-photo-3934512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: scroll;
+  } ↑ Para que a Imagem de Fundo Permaneça No Topo Da Página,
+    Não Acompanhando o Rolamento da Mesma ↑ */
+
+body {
+    background-color: #AAAAE6;
+}
+
+/* ↑ Base Básica; Tentar Adicionar a Imagem e, Quem Sabe,
+   Uma Espécie de Degradê Até Esta Cor Depois ↑ */
+
 footer {
-    background: #333;
+    background: #0F1836;
     text-align: center;
-    padding: 1em;
+    padding: 1.5em;
 }
