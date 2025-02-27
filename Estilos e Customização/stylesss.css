@@ -44,20 +44,30 @@ article {
 
 article:hover {
     background: #405AB0;
+    background-color: aqua;
     transform: scale(1.05);
     /* */
 }
 
-/* body {
-    background-image: url(https://images.pexels.com/photos/3934512/pexels-photo-3934512.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+img .Imagens_Main {
+    width: ;
+    height: ;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*
+body {
+    background-image:
     background-repeat: no-repeat;
     background-position: center top;
     background-attachment: scroll;
-  } ↑ Para que a Imagem de Fundo Permaneça No Topo Da Página,
+  } /* ↑ Para que a Imagem de Fundo Permaneça No Topo Da Página,
     Não Acompanhando o Rolamento da Mesma ↑ */
 
 body {
     background-color: #AAAAE6;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ↑ Base Básica; Tentar Adicionar a Imagem e, Quem Sabe,
