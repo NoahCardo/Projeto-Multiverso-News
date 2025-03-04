@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ↑ Ajusta As Medidas de Nossa(s) Página(s) Para as Exigências de Diferentes Navegadores! ↑ */
+
+header {
+    background: #0F1836;
+    color: #7291F9;
+    padding: 1.5em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.nome_e_logo {
+    color: #eb4cc8;
+}
+
+.menu_bottom_categorias {
+  text-align: center;
+}
+
+.menu_bottom_categorias ul li {
+  display: inline-block;
+  margin: 0 25px;
+  text-align: center;
+}
+
+.menu_bottom_categorias ul li a {
+  color: #AAAAE6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: larger;
+  text-decoration: underline;
+  cursor: pointer;
+}
+ 
+.menu_bottom_categorias ul li a:hover {
+  color: #eb4cc8;
+}
+
+article {
+    background: #405AB0;
+    display: flex;
+    margin: 1.5em;
+    padding: 1.5em;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    border-radius: 20px;
+    width: 775;
+    height: 510;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover; /* 'cover' ou 'contain' dependendo do efeito desejado */
+}
+
+a {
+    color: #0F1836;
+}
+
+/*
+body {
+    background-image: url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+  } 
+/* ↑ Para que a Imagem de Fundo Permaneça No Topo Da Página, Não Acompanhando o Rolamento da Mesma ↑ */
+
+body {
+    background-color: #AAAAE6;
+    font-family: 'Playfair+Display', 'Times New Roman', Times, serif sans-serif;
+}
+
+/* ↑ Base Básica; Tentar Adicionar a Imagem e, Quem Sabe,
+   Uma Espécie de Degradê Até Esta Cor Depois ↑ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* ↑ Importa a Fonte do Google Fonts; Logo,s Não é Necessário Baixá-la! ↑ */
+
+/* Pequena Sessão de Notícias! */
+
+.Sessão_Rec {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.Sessão_Rec article {
+    background: #405AB0;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1.5em;
+    border-radius: 20px;
+    transition: all .6s;
+    /* Animação de 0.6 segundos */
+    justify-content: center;
+    align-items: center;
+}
+
+.Sessão_Rec article:hover {
+    background: #7291F9;
+    transform: scale(1.05);
+    /* */
+    cursor: pointer;
+}
+
+.Notícias {
+    background: #405AB0;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    padding: 1.5em;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+p {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 1em 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Matéria p {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 1em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: normal;
+}
+
+.Títulos p {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 1em 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Orbite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: large;
+    font-weight: bold;
+}
+
+h1  {
+    line-height: 1em;
+    margin: 1em 0;
+    font-weight: bold;
+}
+
+h4, h5 {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 1em 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+footer {
+    background: #0F1836;
+    color: #eb4cc8;
+    text-align: center;
+    padding: 1.5em;
+}

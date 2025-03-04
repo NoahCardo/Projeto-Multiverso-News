@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ↑ Ajusta As Medidas de Nossa(s) Página(s) Para as Exigências de Diferentes Navegadores! ↑ */
+
+header {
+    background: #0F1836;
+    color: #7291F9;
+    padding: 1.5em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.nome_e_logo {
+    color: #eb4cc8;
+}
+
+.menu_bottom_categorias {
+  text-align: center;
+}
+
+.menu_bottom_categorias ul li {
+  display: inline-block;
+  margin: 0 25px;
+  text-align: center;
+}
+
+.menu_bottom_categorias ul li a {
+  color: #AAAAE6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: larger;
+  text-decoration: underline;
+  cursor: pointer;
+}
+ 
+.menu_bottom_categorias ul li a:hover {
+  color: #eb4cc8;
+}
+
+article {
+    background: #405AB0;
+    display: flex;
+    margin: 1em;
+    padding: 1.5em;
+    border-radius: 20px;
+    transition: all .6s;
+    /* Animação de 0.6 segundos */
+    justify-content: center;
+    align-items: center;
+}
+
+article:hover {
+    background: #7291F9;
+    transform: scale(1.05);
+    /* */
+    cursor: pointer;
+}
+
+.noticia_destaque {
+    background: #405AB0;
+    display: flex;
+    margin: 0 auto;
+    padding: 1em;
+    width: 800px;
+    height: 400px;
+    justify-content: center;
+    text-align: center;
+}
+
+.Imagens_Main {
+    border-radius: 20px;
+    width: 510px;
+    height: 310px;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover; /* 'cover' ou 'contain' dependendo do efeito desejado */
+}
+
+a {
+    color: #0F1836;
+}
+
+/*
+body {
+    background-image: url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll;
+  } 
+/* ↑ Para que a Imagem de Fundo Permaneça No Topo Da Página, Não Acompanhando o Rolamento da Mesma ↑ */
+
+body {
+    background-color: #AAAAE6;
+    font-family: 'Playfair+Display', 'Times New Roman', Times, serif sans-serif;
+}
+
+/* ↑ Base Básica; Tentar Adicionar a Imagem e, Quem Sabe,
+   Uma Espécie de Degradê Até Esta Cor Depois ↑ */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* ↑ Importa a Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↑ */
+
+img {
+    border-radius: 20px;
+    width: 350;
+    height: 210;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover; /* 'cover' ou 'contain' dependendo do efeito desejado */
+}
+
+/* Pequenas Sessões de Notícias! */
+
+.Sessão_Populares {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.Sessão_Recentes {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.Sessão_Jogos {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.Sessão_Otaku {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.Sessão_STVC {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.Sessão_Rec {
+    display: flex;
+    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+/* Slider e Slides de Minhas Notícias Principais! */
+
+.slider_noticias_principais {
+    margin: 0 auto;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.noticias_principais {
+    display: flex;
+    width: 400%;
+    height: 400px;
+}
+
+.noticias_principais input {
+    display: none;
+}
+
+.slide_first {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+    transition: 2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide article {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.manual_navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #eb4cc8;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: #eb4cc8;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+.navigation-auto div {
+    border: 2px solid #eb4cc8;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.navigation-auto {
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 360px;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background: #eb4cc8;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background: #eb4cc8;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background: #eb4cc8;
+}
+
+/* ↑ Slider e Slides de Minhas Notícias Principais! ↑ */
+
+p {
+    font-size: 1.5em;
+    line-height: 1em;
+    margin: 1em 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Orbite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: large;
+    font-weight: bold;
+}
+
+footer {
+    background: #0F1836;
+    color: #eb4cc8;
+    text-align: center;
+    padding: 1.5em;
+}
