@@ -84,26 +84,30 @@ a {
     color: #0F1836;
 }
 
-/*
-body {
-    background-image: url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: scroll;
-  } 
-/* ↑ Para que a Imagem de Fundo Permaneça No Topo Da Página, Não Acompanhando o Rolamento da Mesma ↑ */
-
 body {
     background-color: #AAAAE6;
     font-family: 'Playfair+Display', 'Times New Roman', Times, serif sans-serif;
+    /* background-image: url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll; */
+
+    /* ↑ Para que a Imagem de Fundo Permaneça No Topo Da Página, Não Acompanhando o Rolamento da Mesma ↑ */
+
 }
 
-/* ↑ Base Básica; Tentar Adicionar a Imagem e, Quem Sabe,
-   Uma Espécie de Degradê Até Esta Cor Depois ↑ */
+/* ↑ Base Simples; Como Anotações, Sugestões a Se Considerar; 
+Tentar Adicionar Uma Imagem de Fundo Atrelada 
+ao Topo de Minha Página e, Quem Sabe, Uma Espécie de Degradê Até 
+a Cor Base Ali Presente Depois ↑ */
+
+
+
+/* ↓ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↓ */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* ↑ Importa a Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↑ */
+/* ↑ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↑ */
 
 img {
     border-radius: 20px;
@@ -114,7 +118,7 @@ img {
     object-fit: cover; /* 'cover' ou 'contain' dependendo do efeito desejado */
 }
 
-/* Pequenas Sessões de Notícias! */
+/* ↓ Pequenas Sessões de Notícias no Decorrer de Minha Index! ↓ */
 
 .Sessão_Populares {
     display: flex;
@@ -164,7 +168,7 @@ img {
     flex-direction: row;
 }
 
-/* Slider e Slides de Minhas Notícias Principais! */
+/* ↓ Slider e Slides de Minhas Notícias Principais, Animadas em Carrossel com Javascript! ↓ */
 
 .slider_noticias_principais {
     margin: 0 auto;
@@ -276,7 +280,7 @@ img {
     background: #eb4cc8;
 }
 
-/* ↑ Slider e Slides de Minhas Notícias Principais! ↑ */
+/* ↑ Slider e Slides de Minhas Notícias Principais, Animadas em Carrossel com Javascript! ↑ */
 
 p {
     font-size: 1.5em;

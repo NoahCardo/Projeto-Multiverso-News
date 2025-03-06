@@ -64,28 +64,32 @@ a {
     color: #0F1836;
 }
 
-/*
-body {
-    background-image: url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-repeat: no-repeat;
-    background-position: top;
-    background-attachment: scroll;
-  } 
-/* ↑ Para que a Imagem de Fundo Permaneça No Topo Da Página, Não Acompanhando o Rolamento da Mesma ↑ */
-
 body {
     background-color: #AAAAE6;
     font-family: 'Playfair+Display', 'Times New Roman', Times, serif sans-serif;
+    /* background-image: url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: scroll; */
+
+    /* ↑ Para que a Imagem de Fundo Permaneça No Topo Da Página, Não Acompanhando o Rolamento da Mesma ↑ */
+
 }
 
-/* ↑ Base Básica; Tentar Adicionar a Imagem e, Quem Sabe,
-   Uma Espécie de Degradê Até Esta Cor Depois ↑ */
+/* ↑ Base Simples; Como Anotações, Sugestões a Se Considerar; 
+Tentar Adicionar Uma Imagem de Fundo Atrelada 
+ao Topo de Minha Página e, Quem Sabe, Uma Espécie de Degradê Até 
+a Cor Base Ali Presente Depois ↑ */
+
+
+
+/* ↓ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↓ */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* ↑ Importa a Fonte do Google Fonts; Logo,s Não é Necessário Baixá-la! ↑ */
+/* ↑ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↑ */
 
-/* Pequena Sessão de Notícias! */
+/* ↓ Pequena Sessão de Notícias (Recomendadas!) Considerar Retirar?... ↓ */
 
 .Sessão_Rec {
     display: flex;
@@ -114,6 +118,8 @@ body {
     /* */
     cursor: pointer;
 }
+
+/* ↑ Pequena Sessão de Notícias (Recomendadas!) Considerar Retirar?... ↑ */
 
 .Notícias {
     background: #405AB0;
