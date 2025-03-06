@@ -53,7 +53,7 @@ article {
     align-items: center;
 }
 
-article:hover {
+.art1:hover {
     background: #7291F9;
     transform: scale(1.05);
     /* */
