@@ -6,39 +6,51 @@
 
 /* ↑ Ajusta As Medidas de Nossa(s) Página(s) Para as Exigências de Diferentes Navegadores! ↑ */
 
+/* ↓ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↓ */
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+
+/* ↑ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↑ */
+
+html {
+    height: 100%;
+}
+
 header {
     background: #0F1836;
-    color: #7291F9;
-    padding: 1.5em;
-    font-family:'Times New Roman', Times, serif;
+    padding: 0 1.5em 1.5em 1.5em;
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .nome_e_logo {
-    color: #eb4cc8;
+    color: #bf53e0;
+    margin: 0, 3px 3px 3px;
 }
 
 .menu_bottom_categorias {
-  text-align: center;
+    text-align: center;
 }
 
 .menu_bottom_categorias ul li {
-  display: inline-block;
-  margin: 0 25px;
-  text-align: center;
+    display: inline-block;
+    margin: 0 25px;
+    text-align: center;
 }
 
 .menu_bottom_categorias ul li a {
-  color: #AAAAE6;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: larger;
-  text-decoration: underline;
-  cursor: pointer;
+    color: #AAAAE6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5em;
+    text-decoration: underline;
+    cursor: pointer;
 }
- 
+
 .menu_bottom_categorias ul li a:hover {
-  color: #eb4cc8;
+    color: #bf53e0;
 }
 
 article {
@@ -77,16 +89,23 @@ article {
     height: 310px;
     justify-content: center;
     align-items: center;
-    object-fit: cover; /* 'cover' ou 'contain' dependendo do efeito desejado */
+    object-fit: cover;
+    /* 'cover' ou 'contain' dependendo do efeito desejado */
 }
 
 a {
     color: #0F1836;
+    text-decoration: none;
+}
+
+main {
+    padding: 1.5em;
 }
 
 body {
+    height: 100%;
     background-color: #AAAAE6;
-    font-family: 'Playfair+Display', 'Times New Roman', Times, serif sans-serif;
+    font-family: 'Times New Roman', 'Times', 'serif sans-serif', system-ui;
     /* background-image: url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-repeat: no-repeat;
     background-position: top;
@@ -101,24 +120,44 @@ Tentar Adicionar Uma Imagem de Fundo Atrelada
 ao Topo de Minha Página e, Quem Sabe, Uma Espécie de Degradê Até 
 a Cor Base Ali Presente Depois ↑ */
 
-
-
-/* ↓ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↓ */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-/* ↑ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↑ */
-
 img {
     border-radius: 20px;
     width: 350;
     height: 210;
     justify-content: center;
     align-items: center;
-    object-fit: cover; /* 'cover' ou 'contain' dependendo do efeito desejado */
+    object-fit: cover;
+    /* 'cover' ou 'contain' dependendo do efeito desejado */
 }
 
 /* ↓ Pequenas Sessões de Notícias no Decorrer de Minha Index! ↓ */
+
+.Mascote {
+    border-radius: 70px;
+    width: 15%;
+    height: 15%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.Sessões {
+    color: #bf53e0;
+    background-color: #0F1836;
+    border-radius: 70px;
+    margin: 1.5em 9vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Sessões p {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+}
 
 .Sessão_Populares {
     display: flex;
@@ -221,7 +260,7 @@ img {
 }
 
 .manual-btn {
-    border: 2px solid #eb4cc8;
+    border: 2px solid #bf53e0;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -233,23 +272,23 @@ img {
 }
 
 .manual-btn:hover {
-    background-color: #eb4cc8;
+    background-color: #bf53e0;
 }
 
-#radio1:checked ~ .first {
+#radio1:checked~.first {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked~.first {
     margin-left: -25%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked~.first {
     margin-left: -50%;
 }
 
 .navigation-auto div {
-    border: 2px solid #eb4cc8;
+    border: 2px solid #bf53e0;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -268,16 +307,16 @@ img {
     margin-right: 10px;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1 {
-    background: #eb4cc8;
+#radio1:checked~.navigation-auto .auto-btn1 {
+    background: #bf53e0;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2 {
-    background: #eb4cc8;
+#radio2:checked~.navigation-auto .auto-btn2 {
+    background: #bf53e0;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3 {
-    background: #eb4cc8;
+#radio3:checked~.navigation-auto .auto-btn3 {
+    background: #bf53e0;
 }
 
 /* ↑ Slider e Slides de Minhas Notícias Principais, Animadas em Carrossel com Javascript! ↑ */
@@ -297,11 +336,24 @@ p {
     flex-direction: row;
     font-size: large;
     font-weight: bold;
+    text-decoration: underline;
+}
+
+.Logo_Nerd_Nebula {
+    align-items: flex-end;
 }
 
 footer {
     background: #0F1836;
-    color: #eb4cc8;
+    color: #bf53e0;
     text-align: center;
     padding: 1.5em;
+}
+
+.copyright {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    margin: 0, 3px 3px 3px;
 }

@@ -1,297 +1,372 @@
 <!DOCTYPE html>
 <html lang="pt-br">
- <head>
-   <meta charset="UTF-8">
-   <title>Nerd Nebula</title>
 
-   <!--Estilo e Customização À Direita!--> <link rel="stylesheet" href="Estilos e Customização/stylesss_index.css">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="Imagens para Estilos e Customização/Nerd Nebula Logo (Fundo Transparente).png"
+    type="image/x-icon" href="./favicon.ico">
+  <title>Nerd Nebula</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
- </head>
+  <!-- ' name="viewport" ': Define que este meta é relacionado à janela de visualização (ou "viewport") do navegador;
 
- <body>
+   ' content="width=device-width" ': Indica que a largura da janela de visualização deve ser igual à largura da tela 
+   do dispositivo. Isso ajuda a adaptar a página ao tamanho do dispositivo, seja um smartphone, tablet ou computador;
+
+   'initial-scale=1.0': Define a escala inicial da página como 1.0, ou seja, sem zoom. A página é exibida no tamanho 
+   normal. -->
+
+  <!-- ↓ Estilo e Customização (CSS)! ↓ -->
+  <link rel="stylesheet" href="Estilos e Customização/stylesss_index.css">
+  <!-- ↓ Estabelecimento de uma Conexão Antecipada com um Domínio Especificado! ↓ -->
+  <link rel="preconnect" href="https://fonts.google.com/">
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+  </style>
+</head>
+
+<!-- ↑ Head (Cabeça ou Aba) Da Minha Página! ↑ -->
+
+<!-- ↓ Body (Corpo) Da Minha Página; Tudo o Que é Exibido ao Usuário! ↓ -->
+
+<body>
+
+  <!-- ↓ Header (Cabeçalho) Da Minha Página! ↓ -->
+
   <header>
-
-    <div style="text-align: center;">
-      <h2 class="nome_e_logo" style="font-size: 2.5em">Nerd Nebula</h2>
+    <div style="justify-content: center; text-align: center; align-items: center;">
+      <img class="Logo_Nerd_Nebula" src="Imagens para Estilos e Customização/Nerd Nebula Logo (Fundo Transparente).png"
+        width="10%" height="10%">
+      <h2 class="nome_e_logo" style="font-size: 3.5em">Nerd Nebula</h2>
     </div>
 
     <br>
 
-  <div class="menu_bottom_categorias">
-   <nav>
-    <ul>
-      <li><a href="jogos.html">Jogos</a></li>
-      <li><a href="otaku.html">Otaku</a></li>
-      <li><a href="stvc.html">Séries, TV e Cinema</a></li>
-    </ul>
-   </nav>
-  </div>
+    <div class="menu_bottom_categorias">
+      <nav>
+        <ul>
+          <li><a href="jogos.html">Jogos</a></li>
+          <li><a href="otaku.html">Otaku</a></li>
+          <li><a href="stvc.html">Séries, TV e Cinema</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
 
-  <br>
-  <br>
+    <br>
 
-  <div class="slider_noticias_principais">
+    <div class="slider_noticias_principais">
 
-    <div class="noticias_principais">
+      <div class="noticias_principais">
 
-      <!-- Bolinhas/Botões Pelas Quais as Notícias "Passam" Abaixo! !-->
-      
-      <input type="radio" name="radio-btn" id="radio1">
-      <input type="radio" name="radio-btn" id="radio2">
-      <input type="radio" name="radio-btn" id="radio3">
+        <!-- ↓ Bolinhas/Botões Pelas Quais as Notícias "Passam" Abaixo! ↓ -->
 
-      <!-- Bolinhas/Botões Pelas Quais as Notícias "Passam" Acima! !-->
+        <input type="radio" name="radio-btn" id="radio1">
+        <input type="radio" name="radio-btn" id="radio2">
+        <input type="radio" name="radio-btn" id="radio3">
 
-      <div class="slide first">
-      <article class="noticia_destaque">
-        <a href="Notícias da Categoria Jogos/noticia_CJ_yakuza.html">
-        <h1 style="font-size: 1.5em; text-align: center;">Lançamento de "Like a Dragon: Pirate Yakuza in Hawaii" 
-        Agita o Mundo dos Games</h1>
-        <img class="Imagens_Main" src="Imagens da Categoria Jogos/Like-a-Dragon-Pirate-Yakuza-in-Hawaii-Crew.webp"
-        alt="Goro Majima, o Protagonista de Pirate Yakuza in Hawaii, e sua Tripulação"
-        title="Goro Majima, o Protagonista de Pirate Yakuza in Hawaii, e sua Tripulação">
-        <br>
-        O aguardado jogo "Like a Dragon: Pirate Yakuza in Hawaii" finalmente chegou às prateleiras e...</a>
-      </article>
+        <!-- ↑ Bolinhas/Botões Pelas Quais as Notícias "Passam" Acima! ↑ -->
+
+        <div class="slide first">
+          <article class="noticia_destaque">
+            <a href="Notícias da Categoria Jogos/noticia_CJ_yakuza.html">
+              <h1 style="font-size: 1.5em; text-align: center;">Lançamento de "Like a Dragon: Pirate Yakuza in Hawaii"
+                Agita o Mundo dos Games</h1>
+              <img class="Imagens_Main" src="Imagens da Categoria Jogos/Like-a-Dragon-Pirate-Yakuza-in-Hawaii-Crew.webp"
+                alt="Goro Majima, o Protagonista de Pirate Yakuza in Hawaii, e sua Tripulação"
+                title="Goro Majima, o Protagonista de Pirate Yakuza in Hawaii, e sua Tripulação">
+              <br>
+              O aguardado jogo "Like a Dragon: Pirate Yakuza in Hawaii" finalmente chegou às prateleiras e...
+            </a>
+          </article>
+        </div>
+
+        <div class="slide">
+          <article class="noticia_destaque">
+            <a href="Notícias da Categoria Otaku/noticia_CO_one_piece.html">
+              <h4 style="font-size: 1.5em; text-align: center;">One Piece: Autor Anuncia que o Mangá Continuará por no
+                Mínimo Mais 15 Anos</h4>
+              <img class="Imagens_Main" src="Imagens da Categoria Otaku/One Piece Cover 3.webp"
+                alt="Arte Colorida do Mangá de One Piece" title="Arte Colorida do Mangá de One Piece">
+              <br>
+              Os fãs de "One Piece" foram surpreendidos por uma notícia que promete prolongar ainda mais...
+            </a>
+          </article>
+        </div>
+
+        <div class="slide">
+          <article class="noticia_destaque">
+            <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_fale_comigo.html">
+              <h5 style="font-size: 1.5em; text-align: center;">Fale Comigo: Terror Sobrenatural de Tirar o Fôlego</h5>
+              <img class="Imagens_Main" src="Imagens da Categoria Séries, TV e Cinema/Fale Comigo.jpg"
+                alt="Mia, a Protagonista de Fale Comigo, Interpretada pela Atriz Sophie Wilde"
+                title="Mia, a Protagonista de Fale Comigo, Interpretada pela Atriz Sophie Wilde">
+              <br>
+              Se você é fã de filmes de terror que combinam suspense, sustos e uma trama...
+            </a>
+          </article>
+        </div>
+
+        <!-- ↓ Botões de Navegação (Navigation-Auto) Entre as Notícias Principais Abaixo! ↓ -->
+
+        <div class="navigation-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+
       </div>
 
-      <div class="slide">
-      <article class="noticia_destaque">
-        <a href="Notícias da Categoria Otaku/noticia_CO_one_piece.html">
-        <h4 style="font-size: 1.5em; text-align: center;">One Piece: Autor Anuncia que o Mangá Continuará por no 
-        Mínimo Mais 15 Anos</h4>
-        <img class="Imagens_Main" src="Imagens da Categoria Otaku/One Piece Cover 3.webp"
-        alt="Arte Colorida do Mangá de One Piece" title="Arte Colorida do Mangá de One Piece">
-        <br>
-        Os fãs de "One Piece" foram surpreendidos por uma notícia que promete prolongar ainda mais...</a>
-      </article>
-      </div>
+      <!-- ↓ Botões de Navegação (Manual-Navigation) Entre as Notícias Principais Abaixo! !-->
 
-      <div class="slide">
-      <article class="noticia_destaque">
-        <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_fale_comigo.html">
-        <h5 style="font-size: 1.5em; text-align: center;">Fale Comigo: Terror Sobrenatural de Tirar o Fôlego</h5>
-        <img class="Imagens_Main" src="Imagens da Categoria Séries, TV e Cinema/Fale Comigo.jpg"
-        alt="Mia, a Protagonista de Fale Comigo, Interpretada pela Atriz Sophie Wilde"
-        title="Mia, a Protagonista de Fale Comigo, Interpretada pela Atriz Sophie Wilde">
-        <br>
-        Se você é fã de filmes de terror que combinam suspense, sustos e uma trama...</a>
-      </article>
-      </div>
-
-      <!-- Botões de Navegação (Navigation-Auto) Entre as Notícias Principais Abaixo! !-->
-
-      <div class="navigation-auto">
-        <div class="auto-btn1"></div>
-        <div class="auto-btn2"></div>
-        <div class="auto-btn3"></div>
+      <div class="manual_navigation">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
       </div>
 
     </div>
 
-    <!-- Botões de Navegação (Manual-Navigation) Entre as Notícias Principais Abaixo! !-->
-
-    <div class="manual_navigation">
-      <label for="radio1" class="manual-btn"></label>
-      <label for="radio2" class="manual-btn"></label>
-      <label for="radio3" class="manual-btn"></label>
-    </div>  
-
-  </div>
-
-    <!--Animação Slider com Javascript À Direita!--> <script src="script.js"></script>
+    <!--Animação Slider com Javascript À Direita!-->
+    <script src="script.js"></script>
 
   </main>
 
   <br>
+  <div class="Sessões" style="justify-content: center; text-align: center; align-items: center;">
+    <p>Notícias Populares<p>
+  </div>
   <br>
-  <h6 style="font-size: 1.5em; text-align: center;">Notícias Populares</h6>
+  <div class="Sessão_Populares">
+    <article class="art1">
+      <a href="Notícias da Categoria Jogos/noticia_CJ_spiritfarer.html">
+        <p>Spiritfarer: Um Jogo que nos Ensina a Dizer
+          Adeus</p>
+        <img src="Imagens da Categoria Jogos/Spiritfarer Portal Eterno.webp"
+          alt="Stella e Daffodil em Frente ao Portal Eterno" title="Stella e Daffodil em Frente ao Portal Eterno"
+          width="350" height="210">
+        <br>
+        O jogo "Spiritfarer", desenvolvido pela Thunder Lotus Games, tem conquistado corações ao redor do mundo...
+      </a>
+    </article>
+
+    <article class="art1">
+      <a href="Notícias da Categoria Otaku/noticia_CO_attack_on_titan.html">
+        <p>Eren Yeager e Reiner Braun: Os Dois
+          Lados de Uma Mesma Moeda</p>
+        <img src="Imagens da Categoria Otaku/Eren Yeager e Reiner Braun 1.jpg" alt="Eren Yeager e Reiner Braun"
+          title="Eren Yeager e Reiner Braun" width="350" height="210">
+        <br>
+        O anime "Attack on Titan", baseado no mangá de Hajime Isayama, conquistou uma legião de...
+      </a>
+    </article>
+
+    <article class="art1">
+      <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_fionna_e_cake.html">
+        <p>Fionna e Cake: O
+          Amadurecimento de Seus Temas em Sintonia com Seu Público</p>
+        <img src="Imagens da Categoria Séries, TV e Cinema/Fionna e Cake Cover.jpg" alt="Capa da Série Fionna e Cake"
+          title="Capa da Série Fionna e Cake" width="350" height="210">
+        <br>
+        A série animada "Fionna e Cake", um spin-off de "Hora de Aventura", chegou como um...
+      </a>
+    </article>
+  </div>
+
   <br>
-<div class="Sessão_Populares">
-  <article class="art1">
-    <a href="Notícias da Categoria Jogos/noticia_CJ_spiritfarer.html"><p>Spiritfarer: Um Jogo que nos Ensina a Dizer 
-    Adeus</p>
-    <img src="Imagens da Categoria Jogos/Spiritfarer Portal Eterno.webp"
-    alt="Stella e Daffodil em Frente ao Portal Eterno" title="Stella e Daffodil em Frente ao Portal Eterno"
-    width="350" height="210">
-    <br>
-    O jogo "Spiritfarer", desenvolvido pela Thunder Lotus Games, tem conquistado corações ao redor do mundo...</a>
-  </article>
-
-  <article class="art1">
-    <a href="Notícias da Categoria Otaku/noticia_CO_attack_on_titan.html"><p>Eren Yeager e Reiner Braun: Os Dois 
-    Lados de Uma Mesma Moeda</p>
-    <img src="Imagens da Categoria Otaku/Eren Yeager e Reiner Braun 1.jpg"
-    alt="Eren Yeager e Reiner Braun" title="Eren Yeager e Reiner Braun" width="350" height="210">
-    <br>
-    O anime "Attack on Titan", baseado no mangá de Hajime Isayama, conquistou uma legião de...</a>
-  </article>
-
-  <article class="art1">
-    <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_fionna_e_cake.html"><p>Fionna e Cake: O 
-    Amadurecimento de Seus Temas em Sintonia com Seu Público</p>
-    <img src="Imagens da Categoria Séries, TV e Cinema/Fionna e Cake Cover.jpg"
-    alt="Capa da Série Fionna e Cake" title="Capa da Série Fionna e Cake" width="350" height="210">
-    <br>
-    A série animada "Fionna e Cake", um spin-off de "Hora de Aventura", chegou como um...</a>
-  </article>
-</div>
-
-  <br>
-  <p style="text-align: center">Notícias Mais Recentes</p>
-  <br>
-
-<div class="Sessão_Recentes">
-  <article class="art1">
-    <a href="Notícias da Categoria Jogos/noticia_CJ_mhw.html"><p>Monster Hunter Wilds e A Evolução de uma Franquia 
-    Lendária</p>
-    <img src="Imagens da Categoria Jogos/Monster Hunter Wilds In Game 1.jpg" 
-    alt="Gameplay do Jogo Monster Hunter Wilds" title="Gameplay do Jogo Monster Hunter Wilds" 
-    width="350" height="210">
-    <br>
-    A franquia Monster Hunter, desenvolvida pela Capcom, tem sido um pilar no mundo dos jogos...</a>
-  </article>
-
-  <article class="art1">
-    <a href="Notícias da Categoria Otaku/noticia_CO_sakura.html"><p>Café Temático de Sakura CardCaptor Será 
-    Inaugurado no Bairro da Liberdade, em São Paulo</p>
-    <img src="Imagens da Categoria Otaku/Café CardCaptor Sakura 1.png" 
-    alt="Arte Promocional para Anúncio do Café" title="Arte Promocional para Anúncio do Café" width="350" height="210">
-    <br>
-    Os fãs do amado anime e mangá "Sakura CardCaptor" têm motivos para comemorar: em breve...</a>
-  </article>
-
-  <article class="art1">
-    <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_stranger_things.html"><p>Eddie Munson Retorna 
-    na Quinta e Última Temporada de Stranger Things</p>
-    <img src="Imagens da Categoria Séries, TV e Cinema/Eddie Munson Cover.jpg"
-    alt="Eddie Munson no Mundo Invertido" title="Eddie Munson no Mundo Invertido" width="350" height="210">
-    <br>
-    Os fãs de "Stranger Things" foram pegos de surpresa com um vazamento bombástico sobre a...</a>
-  </article>
-</div>  
-
-<br>
-  <p style="text-align: center">Notícias da Categoria Jogos</p>
+  <div class="Sessões" style="justify-content: center; text-align: center; align-items: center;">
+    <p>Notícias Mais Recentes</p>
+  </div>
   <br>
 
-<div class="Sessão_Jogos">
-  <article class="art1">
-    <a href="Notícias da Categoria Jogos/noticia_CJ_mario.html"><p>Super Mario World: O Legado de um Clássico do 
-    Super Nintendo</p>
-    <img src="Imagens da Categoria Jogos/Super Mario World Cover.jpg" 
-    alt="Arte da Capa do Jogo Super Mario World" title="Arte da Capa do Jogo Super Mario World"
-    width="350" height="210">
-    <br>
-    Lançado em 1990 no Japão e em 1991 na América do Norte, "Super Mario World"... </a>
-  </article>
+  <div class="Sessão_Recentes">
+    <article class="art1">
+      <a href="Notícias da Categoria Jogos/noticia_CJ_mhw.html">
+        <p>Monster Hunter Wilds e A Evolução de uma Franquia
+          Lendária</p>
+        <img src="Imagens da Categoria Jogos/Monster Hunter Wilds In Game 1.jpg"
+          alt="Gameplay do Jogo Monster Hunter Wilds" title="Gameplay do Jogo Monster Hunter Wilds" width="350"
+          height="210">
+        <br>
+        A franquia Monster Hunter, desenvolvida pela Capcom, tem sido um pilar no mundo dos jogos...
+      </a>
+    </article>
 
-  <article class="art1">
-    <a href="Notícias da Categoria Jogos/noticia_CJ_acnh.html"><p>Animal Crossing: New Horizons e Happy Home 
-    Paradise: Estímulo à Criatividade e Conforto Acolhedor</p>
-    <img src="Imagens da Categoria Jogos/Animal Crossing New Horizons In Game 2.jpg" 
-    alt="Gameplay do Jogo Animal Crossing: New Horizons" title="Gameplay do Jogo Animal Crossing: New Horizons" 
-    width="350" height="210">
-    <br>
-    Desde seu lançamento em março de 2020, "Animal Crossing: New Horizons" tem sido um refúgio...</a>
-  </article>
+    <article class="art1">
+      <a href="Notícias da Categoria Otaku/noticia_CO_sakura.html">
+        <p>Café Temático de Sakura CardCaptor Será
+          Inaugurado no Bairro da Liberdade, em São Paulo</p>
+        <img src="Imagens da Categoria Otaku/Café CardCaptor Sakura 1.png" alt="Arte Promocional para Anúncio do Café"
+          title="Arte Promocional para Anúncio do Café" width="350" height="210">
+        <br>
+        Os fãs do amado anime e mangá "Sakura CardCaptor" têm motivos para comemorar: em breve...
+      </a>
+    </article>
 
-  <article class="art1">
-    <a href="Notícias da Categoria Jogos/noticia_CJ_terraria.html"><p>Terraria: Um Clássico que Continua a Evoluir</p>
-    <img src="Imagens da Categoria Jogos/Terraria Cover 2.jpg" 
-    alt="Arte da Capa do Jogo Terraria" title="Arte da Capa do Jogo Terraria" width="350" height="210">
-    <br>
-    Desde seu lançamento em 2011, "Terraria" tem cativado jogadores com sua combinação única de exploração...</a>
-  </article>
-</div> 
+    <article class="art1">
+      <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_stranger_things.html">
+        <p>Eddie Munson Retorna
+          na Quinta e Última Temporada de Stranger Things</p>
+        <img src="Imagens da Categoria Séries, TV e Cinema/Eddie Munson Cover.jpg" alt="Eddie Munson no Mundo Invertido"
+          title="Eddie Munson no Mundo Invertido" width="350" height="210">
+        <br>
+        Os fãs de "Stranger Things" foram pegos de surpresa com um vazamento bombástico sobre a...
+      </a>
+    </article>
+  </div>
+
+  <br>
+  <div class="Sessões" style="justify-content: center; text-align: center; align-items: center;">
+
+    <p>Notícias da Categoria Jogos</p>
+
+  </div>
+  <br>
+
+  <div class="Sessão_Jogos">
+    <article class="art1">
+      <a href="Notícias da Categoria Jogos/noticia_CJ_mario.html">
+        <p>Super Mario World: O Legado de um Clássico do
+          Super Nintendo</p>
+        <img src="Imagens da Categoria Jogos/Super Mario World Cover.jpg" alt="Arte da Capa do Jogo Super Mario World"
+          title="Arte da Capa do Jogo Super Mario World" width="350" height="210">
+        <br>
+        Lançado em 1990 no Japão e em 1991 na América do Norte, "Super Mario World"...
+      </a>
+    </article>
+
+    <article class="art1">
+      <a href="Notícias da Categoria Jogos/noticia_CJ_acnh.html">
+        <p>Animal Crossing: New Horizons e Happy Home
+          Paradise: Estímulo à Criatividade e Conforto Acolhedor</p>
+        <img src="Imagens da Categoria Jogos/Animal Crossing New Horizons In Game 2.jpg"
+          alt="Gameplay do Jogo Animal Crossing: New Horizons" title="Gameplay do Jogo Animal Crossing: New Horizons"
+          width="350" height="210">
+        <br>
+        Desde seu lançamento em março de 2020, "Animal Crossing: New Horizons" tem sido um refúgio...
+      </a>
+    </article>
+
+    <article class="art1">
+      <a href="Notícias da Categoria Jogos/noticia_CJ_terraria.html">
+        <p>Terraria: Um Clássico que Continua a Evoluir</p>
+        <img src="Imagens da Categoria Jogos/Terraria Cover 2.jpg" alt="Arte da Capa do Jogo Terraria"
+          title="Arte da Capa do Jogo Terraria" width="350" height="210">
+        <br>
+        Desde seu lançamento em 2011, "Terraria" tem cativado jogadores com sua combinação única de exploração...
+      </a>
+    </article>
+  </div>
   <br>
   <a href="jogos.html" class="Orbite">Orbite Por Mais Itens da Categoria "Jogos" Clicando Aqui!</a>
 
   <br>
-  <p style="text-align: center">Notícias da Categoria Otaku</p>
+  <div class="Sessões" style="justify-content: center; text-align: center; align-items: center;">
+    
+    <p>Notícias da Categoria Otaku</p>
+    
+  </div>
   <br>
 
-<div class="Sessão_Otaku">
-  <article class="art1">
-    <a href="Notícias da Categoria Otaku/noticia_CO_my_daemon.html"><p>My Daemon: Uma Jóia Oculta da Netflix que 
-    Merece Sua Atenção</p>
-    <img src="Imagens da Categoria Otaku/My Daemon Cover.jpg" 
-    alt="Kento Tachibana e Anna, seu Demônio de Estimação" 
-    title="Kento Tachibana e Anna, seu Demônio de Estimação" width="350" height="210">
-    <br>
-    Em meio ao vasto catálogo de animes disponíveis na Netflix, "My Daemon" pode não ser...</a>
-  </article>
+  <div class="Sessão_Otaku">
+    <article class="art1">
+      <a href="Notícias da Categoria Otaku/noticia_CO_my_daemon.html">
+        <p>My Daemon: Uma Jóia Oculta da Netflix que
+          Merece Sua Atenção</p>
+        <img src="Imagens da Categoria Otaku/My Daemon Cover.jpg" alt="Kento Tachibana e Anna, seu Demônio de Estimação"
+          title="Kento Tachibana e Anna, seu Demônio de Estimação" width="350" height="210">
+        <br>
+        Em meio ao vasto catálogo de animes disponíveis na Netflix, "My Daemon" pode não ser...
+      </a>
+    </article>
 
-  <article class="art1">
-    <a href="Notícias da Categoria Otaku/noticia_CO_crossover_dm_tdd.html"><p>Dungeon Meshi e The Darkest Dungeon: 
-    Um Crossover Épico</p>
-    <img src="Imagens da Categoria Otaku/Dungeon Meshi e The Darkest Dungeon Crossover 2.png" 
-    alt="Personagens de Dungeon Meshi no Jogo The Darkest Dungeon" 
-    title="Personagens de Dungeon Meshi no Jogo The Darkest Dungeon" width="350" height="210">
-    <br>
-    Os fãs de animes e jogos de RPG têm motivos para comemorar com o lançamento...</a>
-  </article>
+    <article class="art1">
+      <a href="Notícias da Categoria Otaku/noticia_CO_crossover_dm_tdd.html">
+        <p>Dungeon Meshi e The Darkest Dungeon:
+          Um Crossover Épico</p>
+        <img src="Imagens da Categoria Otaku/Dungeon Meshi e The Darkest Dungeon Crossover 2.png"
+          alt="Personagens de Dungeon Meshi no Jogo The Darkest Dungeon"
+          title="Personagens de Dungeon Meshi no Jogo The Darkest Dungeon" width="350" height="210">
+        <br>
+        Os fãs de animes e jogos de RPG têm motivos para comemorar com o lançamento...
+      </a>
+    </article>
 
-  <article class="art1">
-    <a href="Notícias da Categoria Otaku/noticia_CO_kabukicho_sherlock.html"><p>Kabukicho Sherlock: Mistérios 
-    Divertidos no Coração de Tóquio</p>
-    <img src="Imagens da Categoria Otaku/Kabukicho Sherlock Cover 2.jpg" 
-    alt="Sherlock, John e os Demais Protagonistas na Icônica Kabukicho" 
-    title="Sherlock, John e os Demais Protagonistas na Icônica Kabukicho" width="350" height="210">
-    <br>
-    O mundo dos animes é conhecido por suas adaptações criativas e inesperadas de clássicos literários...</a>
-  </article>
-</div> 
+    <article class="art1">
+      <a href="Notícias da Categoria Otaku/noticia_CO_kabukicho_sherlock.html">
+        <p>Kabukicho Sherlock: Mistérios
+          Divertidos no Coração de Tóquio</p>
+        <img src="Imagens da Categoria Otaku/Kabukicho Sherlock Cover 2.jpg"
+          alt="Sherlock, John e os Demais Protagonistas na Icônica Kabukicho"
+          title="Sherlock, John e os Demais Protagonistas na Icônica Kabukicho" width="350" height="210">
+        <br>
+        O mundo dos animes é conhecido por suas adaptações criativas e inesperadas de clássicos literários...
+      </a>
+    </article>
+  </div>
   <br>
   <a href="otaku.html" class="Orbite">Orbite Por Mais Itens da Categoria "Otaku" Clicando Aqui!</a>
 
   <br>
-  <p style="text-align: center">Notícias da Categoria Séries, TV e Cinema</p>
+  <div class="Sessões" style="justify-content: center; text-align: center; align-items: center;">
+   
+    <p>Notícias da Categoria Séries, TV e Cinema</p>
+    
+  </div>
   <br>
 
-<div class="Sessão_STVC">
-  <article class="art1">
-    <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_barbie.html"><p>Barbie: O Filme Icônico que 
-    Quebrou Recordes Mundiais</p>
-    <img src="Imagens da Categoria Séries, TV e Cinema/Barbie Filme 1.jpg" 
-    alt="Barbie em seu Carro em Direção ao Mundo Real" 
-    title="Barbie em seu Carro em Direção ao Mundo Real" width="350" height="210">
-    <br>
-    O filme "Barbie", lançado em 2023 e dirigido por Greta Gerwig, se tornou um marco...</a>
-  </article>
+  <div class="Sessão_STVC">
+    <article class="art1">
+      <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_helluva_boss.html">
+        <p>Helluva Boss e a Real
+          História de Stolas, Príncipe Do Inferno</p>
+        <img src="Imagens da Categoria Séries, TV e Cinema/Stolas Cover.jpg"
+          alt="Stolas de Helluva Boss Contemplando as Estrelas" title="Stolas de Helluva Boss Contemplando as Estrelas"
+          width="350" height="210">
+        <br>
+        "Helluva Boss" é uma série animada criada por Vivienne Medrano, também conhecida como VivziePop, e...
+      </a>
+    </article>
 
-  <article class="art1">
-    <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_helluva_boss.html"><p>Helluva Boss e a Real 
-    História de Stolas, Príncipe Do Inferno</p>
-    <img src="Imagens da Categoria Séries, TV e Cinema/Stolas Cover.jpg" 
-    alt="Stolas de Helluva Boss Contemplando as Estrelas" 
-    title="Stolas de Helluva Boss Contemplando as Estrelas" width="350" height="210">
-    <br>
-    "Helluva Boss" é uma série animada criada por Vivienne Medrano, também conhecida como VivziePop, e...</a>
-  </article>
+    <article class="art1">
+      <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_barbie.html">
+        <p>Barbie: O Filme Icônico que
+          Quebrou Recordes Mundiais</p>
+        <img src="Imagens da Categoria Séries, TV e Cinema/Barbie Filme 1.jpg"
+          alt="Barbie em seu Carro em Direção ao Mundo Real" title="Barbie em seu Carro em Direção ao Mundo Real"
+          width="350" height="210">
+        <br>
+        O filme "Barbie", lançado em 2023 e dirigido por Greta Gerwig, se tornou um marco...
+      </a>
+    </article>
 
-  <article class="art1">
-    <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_cavaleiro_da_lua.html"><p>Cavaleiro da Lua: Uma 
-    Análise da Adaptação da Série em Relação às Histórias em Quadrinhos</p>
-    <img src="Imagens da Categoria Séries, TV e Cinema/Cavaleiro da Lua Cover 1.jpg" 
-    alt="Cavaleiro da Lua" title="Cavaleiro da Lua" width="350" height="210">
-    <br>
-    A série "Cavaleiro da Lua", lançada pela Marvel Studios e disponível no Disney+, trouxe um...</a>
-  </article>
-</div>  
+    <article class="art1">
+      <a href="Notícias da Categoria Séries, TV e Cinema/noticia_STVC_cavaleiro_da_lua.html">
+        <p>Cavaleiro da Lua: Uma
+          Análise da Adaptação da Série em Relação às Histórias em Quadrinhos</p>
+        <img src="Imagens da Categoria Séries, TV e Cinema/Cavaleiro da Lua Cover 1.jpg" alt="Cavaleiro da Lua"
+          title="Cavaleiro da Lua" width="350" height="210">
+        <br>
+        A série "Cavaleiro da Lua", lançada pela Marvel Studios e disponível no Disney+, trouxe um...
+      </a>
+    </article>
+  </div>
   <br>
   <a href="stvc.html" class="Orbite">Orbite Por Mais Itens da Categoria "Séries, TV e Cinema" Clicando Aqui!</a>
   <br>
   <br>
 
   <footer>
-    <div style="text-align: center;">
-      <p>© 2025 - 2025 Nerd Nebula Produção de Conteúdo LTDA.</p>
+    <div style="justify-content: center; text-align: center; align-items: center;">
+      <img class="Logo_Nerd_Nebula" src="Imagens para Estilos e Customização/Nerd Nebula Logo (Fundo Transparente).png"
+        width="10%" height="10%">
+      <p class="copyright">© 2025 - 2025 Nerd Nebula (Por Noah Cardozo); All Rights Reserved</p>
     </div>
   </footer>
 
- </body>
+</body>
+
 </html>

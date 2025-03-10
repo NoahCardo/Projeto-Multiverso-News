@@ -6,45 +6,57 @@
 
 /* ↑ Ajusta As Medidas de Nossa(s) Página(s) Para as Exigências de Diferentes Navegadores! ↑ */
 
+/* ↓ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↓ */
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap');
+
+/* ↑ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↑ */
+
+html {
+    height: 100%;
+}
+
 header {
     background: #0F1836;
-    color: #7291F9;
-    padding: 1.5em;
-    font-family:'Times New Roman', Times, serif;
+    padding: 0 1.5em 1.5em 1.5em;
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .nome_e_logo {
-    color: #eb4cc8;
+    color: #bf53e0;
+    margin: 0, 3px 3px 3px;
 }
 
 .menu_bottom_categorias {
-  text-align: center;
+    text-align: center;
 }
 
 .menu_bottom_categorias ul li {
-  display: inline-block;
-  margin: 0 25px;
-  text-align: center;
+    display: inline-block;
+    margin: 0 25px;
+    text-align: center;
 }
 
 .menu_bottom_categorias ul li a {
-  color: #AAAAE6;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-size: larger;
-  text-decoration: underline;
-  cursor: pointer;
+    color: #AAAAE6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 1.5em;
+    text-decoration: underline;
+    cursor: pointer;
 }
- 
+
 .menu_bottom_categorias ul li a:hover {
-  color: #eb4cc8;
+    color: #bf53e0;
 }
 
 article {
     background: #405AB0;
     display: flex;
-    margin: 1.5em;
+    margin: 6.5em;
     padding: 1.5em;
     border-radius: 20px;
     justify-content: center;
@@ -57,7 +69,8 @@ img {
     height: 510;
     justify-content: center;
     align-items: center;
-    object-fit: cover; /* 'cover' ou 'contain' dependendo do efeito desejado */
+    object-fit: cover;
+    /* 'cover' ou 'contain' dependendo do efeito desejado */
 }
 
 a {
@@ -65,8 +78,9 @@ a {
 }
 
 body {
+    height: 100%;
     background-color: #AAAAE6;
-    font-family: 'Playfair+Display', 'Times New Roman', Times, serif sans-serif;
+    font-family: 'Times New Roman', 'Times', 'serif sans-serif', system-ui;
     /* background-image: url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-repeat: no-repeat;
     background-position: top;
@@ -81,51 +95,11 @@ Tentar Adicionar Uma Imagem de Fundo Atrelada
 ao Topo de Minha Página e, Quem Sabe, Uma Espécie de Degradê Até 
 a Cor Base Ali Presente Depois ↑ */
 
-
-
-/* ↓ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↓ */
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-/* ↑ Importa uma Fonte do Google Fonts; Logo, Não é Necessário Baixá-la! ↑ */
-
-/* ↓ Pequena Sessão de Notícias (Recomendadas!) Considerar Retirar?... ↓ */
-
-.Sessão_Rec {
-    display: flex;
-    justify-content: space-around;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-}
-
-.Sessão_Rec article {
-    background: #405AB0;
-    display: flex;
-    flex-direction: column;
-    margin: 1em;
-    padding: 1.5em;
-    border-radius: 20px;
-    transition: all .6s;
-    /* Animação de 0.6 segundos */
-    justify-content: center;
-    align-items: center;
-}
-
-.Sessão_Rec article:hover {
-    background: #7291F9;
-    transform: scale(1.05);
-    /* */
-    cursor: pointer;
-}
-
-/* ↑ Pequena Sessão de Notícias (Recomendadas!) Considerar Retirar?... ↑ */
-
 .Notícias {
     background: #405AB0;
     display: flex;
     flex-direction: column;
-    margin: 1em;
+    margin: 1.5em 6.5em 0 6.5em;
     padding: 1.5em;
     border-radius: 20px;
     justify-content: center;
@@ -147,7 +121,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    text-align: start;
     font-weight: normal;
 }
 
@@ -166,15 +140,17 @@ p {
     flex-direction: row;
     font-size: large;
     font-weight: bold;
+    padding: 1.5em;
 }
 
-h1  {
+h1 {
     line-height: 1em;
     margin: 1em 0;
     font-weight: bold;
 }
 
-h4, h5 {
+h4,
+h5 {
     font-size: 1.5em;
     line-height: 1em;
     margin: 1em 0;
@@ -184,7 +160,15 @@ h4, h5 {
 
 footer {
     background: #0F1836;
-    color: #eb4cc8;
+    color: #bf53e0;
     text-align: center;
     padding: 1.5em;
+}
+
+.copyright {
+    font-family: "Jacquard 12", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5em;
+    margin: 0, 3px 3px 3px;
 }
