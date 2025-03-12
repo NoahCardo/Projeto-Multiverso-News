@@ -18,7 +18,7 @@ html {
 
 header {
     background: #0F1836;
-    padding: 0 1.5em 1.5em 1.5em;
+    padding: 1.5em;
     font-family: "Jacquard 12", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -26,7 +26,7 @@ header {
 
 .nome_e_logo {
     color: #bf53e0;
-    margin: 0, 3px 3px 3px;
+    margin: 5px;
 }
 
 .menu_bottom_categorias {
@@ -106,12 +106,14 @@ body {
     height: 100%;
     background-color: #AAAAE6;
     font-family: 'Times New Roman', 'Times', 'serif sans-serif', system-ui;
-    /* background-image: url('https://images.pexels.com/photos/957085/milky-way-starry-sky-night-sky-star-957085.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url(../Imagens\ para\ Estilos\ e\ Customização/Background\ Para\ Fixar\ no\ Topo\ 1_enhanced.jpg);
     background-repeat: no-repeat;
     background-position: top;
-    background-attachment: scroll; */
+    background-attachment: scroll;
 
     /* ↑ Para que a Imagem de Fundo Permaneça No Topo Da Página, Não Acompanhando o Rolamento da Mesma ↑ */
+
+    background-size: cover;
 
 }
 
@@ -131,15 +133,6 @@ img {
 }
 
 /* ↓ Pequenas Sessões de Notícias no Decorrer de Minha Index! ↓ */
-
-.Mascote {
-    border-radius: 70px;
-    width: 15%;
-    height: 15%;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-}
 
 .Sessões {
     color: #bf53e0;
@@ -242,6 +235,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.5em;
 }
 
 .slide article {
@@ -341,6 +335,7 @@ p {
 
 .Logo_Nerd_Nebula {
     align-items: flex-end;
+    margin: 3px;
 }
 
 footer {
@@ -355,5 +350,5 @@ footer {
     font-weight: 400;
     font-style: normal;
     font-size: 2.5em;
-    margin: 0, 3px 3px 3px;
+    margin: 5px;
 }
