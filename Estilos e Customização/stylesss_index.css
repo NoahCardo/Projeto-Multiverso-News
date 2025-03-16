@@ -72,6 +72,27 @@ article {
     cursor: pointer;
 }
 
+/* ↓ Para o Primeiro Artigo/Notícia de Cada Categoria! ↓ */
+
+.art1_cat {
+    display: flex;
+    margin: 0 10.5em 0 10.5em;
+    padding: 1.5em;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.art1_cat:hover {
+    background: #7291F9;
+    transform: scale(1.05);
+    /* */
+    cursor: pointer;
+}
+
+/* ↑ Para o Primeiro Artigo/Notícia de Cada Categoria! ↑ */
+
 .noticia_destaque {
     background: #405AB0;
     display: flex;
@@ -81,16 +102,6 @@ article {
     height: 400px;
     justify-content: center;
     text-align: center;
-}
-
-.Imagens_Main {
-    border-radius: 20px;
-    width: 510px;
-    height: 310px;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-    /* 'cover' ou 'contain' dependendo do efeito desejado */
 }
 
 a {
