@@ -167,44 +167,34 @@ img {
     font-size: 3rem;
 }
 
-.Sessão_Populares {
+.Sessões_Gerais {
     display: flex;
-    justify-content: space-around;
     justify-content: center;
-    text-align: center;
-    flex-direction: row;
+    align-items: center;
+    align-items: stretch;
+    flex-wrap: wrap; /* Permite que os Artigos "Quebrem" para a Próxima Linha */
+    gap: 1em; /* Espaçamento Entre os Artigos */
 }
 
-.Sessão_Recentes {
-    display: flex;
-    justify-content: space-around;
+.Sessões_Gerais article {
+    flex: 1 1 300px;
+    max-width: 100%; /* Garante que o Artigo não Ultrapasse a Largura do Contêiner */
+    margin: 1em; /* Espaçamento Entre os Artigos */
+    overflow: hidden; /* Impede que o Conteúdo "Vaze" */
     justify-content: center;
     text-align: center;
-    flex-direction: row;
 }
 
-.Sessão_Jogos {
-    display: flex;
-    justify-content: space-around;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
+.Sessões_Gerais img {
+    max-width: 100%; /* Garante que a Imagem não Ultrapasse a Largura do Contêiner */
+    height: auto; /* Mantém a Proporção da Imagem */
+    border-radius: 20px;
 }
 
-.Sessão_Otaku {
-    display: flex;
-    justify-content: space-around;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-}
-
-.Sessão_STVC {
-    display: flex;
-    justify-content: space-around;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
+.Sessões_Gerais p {
+    font-size: 1rem; /* Tamanho Relativo Para o Texto */
+    line-height: 1.5; /* Melhora a Legibilidade */
+    margin: 0.5em 0; /* Espaçamento Adequado */
 }
 
 /* ↑ Pequenas Sessões de Notícias no Decorrer de Minha Index! ↑ */
@@ -270,7 +260,7 @@ img {
 }
 
 .manual-btn {
-    border: 2px solid #bf53e0;
+    border: 2px solid #2a006e;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -282,7 +272,7 @@ img {
 }
 
 .manual-btn:hover {
-    background-color: #bf53e0;
+    background-color: #2a006e;
 }
 
 #radio1:checked~.first {
@@ -298,7 +288,7 @@ img {
 }
 
 .navigation-auto div {
-    border: 2px solid #bf53e0;
+    border: 2px solid #2a006e;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -320,15 +310,15 @@ img {
 }
 
 #radio1:checked~.navigation-auto .auto-btn1 {
-    background: #bf53e0;
+    background: #2a006e;
 }
 
 #radio2:checked~.navigation-auto .auto-btn2 {
-    background: #bf53e0;
+    background: #2a006e;
 }
 
 #radio3:checked~.navigation-auto .auto-btn3 {
-    background: #bf53e0;
+    background: #2a006e;
 }
 
 /* ↑ Slider e Slides de Minhas Notícias Principais, Animadas em Carrossel com Javascript! ↑ */
