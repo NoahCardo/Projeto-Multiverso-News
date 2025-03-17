@@ -14,6 +14,7 @@
 
 html {
     height: 100%;
+    overflow-x: hidden; /* Oculta a Barra de Rolagem Horizontal */
 }
 
 header {
@@ -22,6 +23,7 @@ header {
     font-family: "Jacquard 12", system-ui;
     font-weight: 400;
     font-style: normal;
+    width: 100vw;
 }
 
 .nome_e_logo {
@@ -33,10 +35,16 @@ header {
     text-align: center;
 }
 
+.menu_bottom_categorias ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
 .menu_bottom_categorias ul li {
-    display: inline-block;
-    margin: 0 25px;
-    text-align: center;
+    margin: 10px;
+    padding: 0 1.5em;
 }
 
 .menu_bottom_categorias ul li a {
@@ -44,7 +52,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     text-decoration: underline;
     cursor: pointer;
 }
@@ -76,12 +84,12 @@ article {
 
 .art1_cat {
     display: flex;
-    margin: 0 10.5em 0 10.5em;
     padding: 1.5em;
     border-radius: 20px;
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin: 0 10.5vw 0 10.5vw;
 }
 
 .art1_cat:hover {
@@ -96,12 +104,16 @@ article {
 .noticia_destaque {
     background: #405AB0;
     display: flex;
-    margin: 0 auto;
-    padding: 1em;
-    width: 800px;
-    height: 400px;
+    align-items: center;
     justify-content: center;
     text-align: center;
+    width: 90vw;
+    height: 50vh;
+    max-width: 800px;
+    max-height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 20px;
 }
 
 a {
@@ -109,38 +121,30 @@ a {
     text-decoration: none;
 }
 
-main {
-    padding: 1.5em;
-}
-
 body {
     height: 100%;
+    margin: 0;
     background-color: #AAAAE6;
     font-family: 'Times New Roman', 'Times', 'serif sans-serif', system-ui;
     background-image: url(../Imagens\ para\ Estilos\ e\ Customização/Background\ Para\ Fixar\ no\ Topo\ 1_enhanced.jpg);
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: top center;
     background-attachment: scroll;
 
     /* ↑ Para que a Imagem de Fundo Permaneça No Topo Da Página, Não Acompanhando o Rolamento da Mesma ↑ */
 
     background-size: cover;
-
 }
-
-/* ↑ Base Simples; Como Anotações, Sugestões a Se Considerar; 
-Tentar Adicionar Uma Imagem de Fundo Atrelada 
-ao Topo de Minha Página e, Quem Sabe, Uma Espécie de Degradê Até 
-a Cor Base Ali Presente Depois ↑ */
 
 img {
     border-radius: 20px;
-    width: 350;
-    height: 210;
     justify-content: center;
     align-items: center;
     object-fit: cover;
     /* 'cover' ou 'contain' dependendo do efeito desejado */
+    max-width: 100%;
+    height: auto;
+    max-height: auto;
 }
 
 /* ↓ Pequenas Sessões de Notícias no Decorrer de Minha Index! ↓ */
@@ -149,7 +153,7 @@ img {
     color: #bf53e0;
     background-color: #0F1836;
     border-radius: 70px;
-    margin: 1.5em 9vh;
+    margin: 1.5em 5%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -160,7 +164,7 @@ img {
     font-family: "Jacquard 12", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .Sessão_Populares {
@@ -203,27 +207,24 @@ img {
     flex-direction: row;
 }
 
-.Sessão_Rec {
-    display: flex;
-    justify-content: space-around;
-    justify-content: center;
-    text-align: center;
-    flex-direction: row;
-}
+/* ↑ Pequenas Sessões de Notícias no Decorrer de Minha Index! ↑ */
 
 /* ↓ Slider e Slides de Minhas Notícias Principais, Animadas em Carrossel com Javascript! ↓ */
 
 .slider_noticias_principais {
     margin: 0 auto;
+    width: 90vw;
+    height: 50vh;
     width: 800px;
     height: 400px;
     overflow: hidden;
+    position: relative;
 }
 
 .noticias_principais {
     display: flex;
     width: 400%;
-    height: 400px;
+    height: 100%;
 }
 
 .noticias_principais input {
@@ -233,16 +234,17 @@ img {
 .slide_first {
     width: 25%;
     position: relative;
-    transition: 2s;
+    transition: 1.5s;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.5em;
 }
 
 .slide {
     width: 25%;
     position: relative;
-    transition: 2s;
+    transition: 1.5s;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -250,6 +252,7 @@ img {
 }
 
 .slide article {
+    width: 90vw;
     width: 800px;
     display: flex;
     justify-content: center;
@@ -258,10 +261,12 @@ img {
 
 .manual_navigation {
     position: absolute;
-    width: 800px;
-    margin-top: -40px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 .manual-btn {
@@ -302,10 +307,12 @@ img {
 
 .navigation-auto {
     position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    width: 800px;
     justify-content: center;
-    margin-top: 360px;
+    gap: 10px;
 }
 
 .navigation-auto div:not(:last-child) {
@@ -327,8 +334,8 @@ img {
 /* ↑ Slider e Slides de Minhas Notícias Principais, Animadas em Carrossel com Javascript! ↑ */
 
 p {
-    font-size: 1.5em;
-    line-height: 1em;
+    font-size: 1.5rem;
+    line-height: 1.5;
     margin: 1em 0;
     text-align: center;
     font-weight: bold;
@@ -342,6 +349,7 @@ p {
     font-size: large;
     font-weight: bold;
     text-decoration: underline;
+    text-align: center;
 }
 
 .Logo_Nerd_Nebula {
@@ -354,12 +362,62 @@ footer {
     color: #bf53e0;
     text-align: center;
     padding: 1.5em;
+    width: 100vw;
 }
 
 .copyright {
     font-family: "Jacquard 12", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 2.5em;
+    font-size: 2.5rem;
     margin: 5px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 770px) {
+    .menu_bottom_categorias ul li {
+        margin: 0 2vw;
+    }
+
+    .art1_cat {
+        margin: 0 5vw;
+    }
+
+    .noticia_destaque,
+    .slider_noticias_principais,
+    .slide article {
+        width: 95vw;
+        height: 60vh;
+    }
+
+    .Sessões p {
+        font-size: 1.5rem; /* Ajustar para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .menu_bottom_categorias ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .art1_cat {
+        margin: 0 2vw;
+    }
+
+    .noticia_destaque,
+    .slider_noticias_principais,
+    .slide article {
+        width: 95vw;
+        height: 60vh;
+    }
+
+    .manual_navigation,
+    .navigation-auto {
+        bottom: 10px; /* Ajustar posição dos botões para telas muito pequenas */
+    }
+
+    .Sessões p {
+        font-size: 1.2rem; /* Ajustar para telas muito pequenas */
+    }
 }
