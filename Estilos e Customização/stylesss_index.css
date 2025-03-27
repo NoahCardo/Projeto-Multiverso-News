@@ -29,6 +29,7 @@ header {
 .nome_e_logo {
     color: #bf53e0;
     margin: 5px;
+    font-size: 3.5rem;
 }
 
 .menu_bottom_categorias {
@@ -343,9 +344,13 @@ p {
 }
 
 .Logo_Nerd_Nebula {
+    width: 100px;
+    height: auto;
+    max-width: 100%;
     align-items: flex-end;
     margin: 3px;
-}
+    justify-content: center;
+  }
 
 footer {
     background: #0F1836;
@@ -410,4 +415,4 @@ footer {
     .Sessões p {
         font-size: 1.2rem; /* Ajustar para telas muito pequenas */
     }
-}
+} 
