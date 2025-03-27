@@ -171,7 +171,6 @@ img {
 .Sessões_Gerais {
     display: flex;
     justify-content: center;
-    align-items: center;
     align-items: stretch;
     flex-wrap: wrap; /* Permite que os Artigos "Quebrem" para a Próxima Linha */
     gap: 1em; /* Espaçamento Entre os Artigos */
@@ -204,8 +203,6 @@ img {
 
 .slider_noticias_principais {
     margin: 0 auto;
-    width: 90vw;
-    height: 50vh;
     width: 800px;
     height: 400px;
     overflow: hidden;
@@ -243,7 +240,6 @@ img {
 }
 
 .slide article {
-    width: 90vw;
     width: 800px;
     display: flex;
     justify-content: center;
